@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "365615585459",
+    "project_id": "masquerade-18ad2",
+    "storage_bucket": "masquerade-18ad2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365615585459:android:050546c1ebd081b587b8c6",
+        "android_client_info": {
+          "package_name": "com.invize.masquerade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8J1s2ZLKLV2alNCdy1VKfLepBgtsSpE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
