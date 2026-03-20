@@ -133,13 +133,8 @@ fun AuthScreen(
                 text = "Masquerade",
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
+                fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
                 color = OnBackground
-            )
-            Text(
-                text = "Общайся анонимно и свободно",
-                fontSize = 14.sp,
-                color = OnSurface,
-                textAlign = TextAlign.Center
             )
 
             Spacer(modifier = Modifier.height(40.dp))

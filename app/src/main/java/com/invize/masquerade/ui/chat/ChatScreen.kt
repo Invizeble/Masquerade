@@ -52,6 +52,8 @@ import com.invize.masquerade.ui.theme.Primary
 import com.invize.masquerade.ui.theme.Subtle
 import com.invize.masquerade.ui.theme.Surface
 import com.invize.masquerade.ui.theme.SurfaceVariant
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 data class Message(
     val id: String,
@@ -68,12 +70,14 @@ fun ChatScreen(
 ) {
     val listState = rememberLazyListState()
     var inputText by remember { mutableStateOf("") }
+    val formatter = DateTimeFormatter.ofPattern("HH:mm")
 
     val messages = remember {
         mutableStateListOf(
-            Message("1", "Привет! Это тестовый чат.", false, "12:30"),
-            Message("2", "Здесь можно общаться анонимно.", false, "12:31"),
-            Message("3", "Отлично, спасибо!", true, "12:33"),
+            Message(id = "1", text = "Test message", isOwn = false, time = LocalDateTime.now().minusMinutes(4).format(formatter)),
+            Message(id = "2", text = "Test message1", isOwn = true, time = LocalDateTime.now().minusMinutes(3).format(formatter)),
+            Message(id = "3", text = "Test message2", isOwn = false, time = LocalDateTime.now().minusMinutes(2).format(formatter)),
+            Message(id = "4", text = "Test message3", isOwn = true, time = LocalDateTime.now().minusMinutes(1).format(formatter))
         )
     }
 

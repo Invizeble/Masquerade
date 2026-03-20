@@ -49,28 +49,12 @@ data class Chat(
 val testChats = listOf(
     Chat(
         id = "1",
-        name = "Тестовый чат",
-        lastMessage = "Привет! Это тестовое сообщение 👋",
-        time = "12:34",
-        unreadCount = 3,
+        name = "test",
+        lastMessage = "lastMassage",
+        time = "time",
+        unreadCount = 1,
         avatarColor = Primary
     ),
-    Chat(
-        id = "2",
-        name = "Общий чат",
-        lastMessage = "Кто-нибудь здесь?",
-        time = "11:20",
-        unreadCount = 0,
-        avatarColor = Color(0xFF00BCD4)
-    ),
-    Chat(
-        id = "3",
-        name = "Анонимный #42",
-        lastMessage = "Ок, договорились",
-        time = "вчера",
-        unreadCount = 1,
-        avatarColor = Color(0xFFFF6B6B)
-    )
 )
 
 @Composable
